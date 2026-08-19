@@ -252,6 +252,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    
+
     <!-- Modal para registro exitoso -->
 <?php if (isset($_GET["registro"]) && $_GET["registro"] == "ok") { ?>
 <script>
@@ -303,6 +305,25 @@ Swal.fire({
 </script>
 
 <?php endif; ?>
+    <script>
+        document.querySelectorAll('.icono-ojo').forEach(function(span) {
+            span.style.cursor = 'pointer';
+
+            span.addEventListener('click', function() {
+                // Busca el input password que está antes de este span
+                const input = this.closest('.input-group').querySelector('input');
+                const icono = this.querySelector('i');
+
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    icono.classList.replace('bi-eye', 'bi-eye-slash');
+                } else {
+                    input.type = 'password';
+                    icono.classList.replace('bi-eye-slash', 'bi-eye');
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>

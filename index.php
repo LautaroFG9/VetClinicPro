@@ -71,6 +71,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="estilos/index.css" />
+
+    
 </head>
 
 <body>
@@ -189,6 +191,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Toggle contraseña -->
+    <script>
+        const inputContraseña = document.getElementById('contraseña');
+        const iconoOjo = document.querySelector('.bi-eye');
+
+        iconoOjo.addEventListener('click', function () {
+            if (inputContraseña.type === 'password') {
+                inputContraseña.type = 'text';
+                this.classList.replace('bi-eye', 'bi-eye-slash');
+            } else {
+                inputContraseña.type = 'password';
+                this.classList.replace('bi-eye-slash', 'bi-eye');
+            }
+        });
+    </script>
+
+</body>
 
 <?php
 
