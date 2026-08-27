@@ -306,6 +306,7 @@ Swal.fire({
 
 <?php endif; ?>
     <script>
+        //Ojo en el input de contraseña
         document.querySelectorAll('.icono-ojo').forEach(function(span) {
             span.style.cursor = 'pointer';
 
