@@ -28,9 +28,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($password == $propietario["password"]) {
 
             // Guardar datos del propietario en la sesión
+            // (mismos nombres que espera inicio_propietarios.php)
+            $_SESSION["logueado"] = true;
             $_SESSION["id_propietario"] = $propietario["id_propietario"];
-            $_SESSION["nombre"] = $propietario["nombre"];
-            $_SESSION["apellido"] = $propietario["apellido"];
+            $_SESSION["usuario_nombre"] = $propietario["nombre"];
+            $_SESSION["usuario_apellido"] = $propietario["apellido"];
             $_SESSION["email"] = $propietario["email"];
 
             // Login correcto
