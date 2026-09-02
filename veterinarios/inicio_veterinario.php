@@ -37,13 +37,13 @@
         <!-- Navegación principal -->
         <div class="seccion-nav">Principal</div>
 
-        <a href="inicio-veterinario.html" class="item-menu activo">
+        <a href="inicio_veterinario.php" class="item-menu activo">
             <i class="bi bi-grid"></i> Inicio
         </a>
         <a href="#" class="item-menu">
             <i class="bi bi-calendar-check"></i> Turnos
         </a>
-        <a href="#" class="item-menu">
+        <a href="../mascotas/listado_mascotas.php" class="item-menu">
             <i class="bi bi-heart-pulse"></i> Mascotas
         </a>
         <a href="#" class="item-menu">
@@ -52,7 +52,7 @@
 
         <div class="seccion-nav">Gestión</div>
 
-        <a href="#" class="item-menu">
+        <a href="../propietarios/listado_propietarios.php" class="item-menu">
             <i class="bi bi-people"></i> Propietarios
         </a>
         <a href="#" class="item-menu">
@@ -160,13 +160,13 @@
                     </div>
                     <div class="row g-3">
                         <div class="col-6 col-md-4 col-lg-2">
-                            <a href="#" class="acceso-rapido">
+                            <a href="../mascotas/listado_mascotas.php" class="acceso-rapido">
                                 <div class="icono-acceso"><i class="bi bi-heart-pulse"></i></div>
                                 Gestionar mascotas
                             </a>
                         </div>
                         <div class="col-6 col-md-4 col-lg-2">
-                            <a href="#" class="acceso-rapido">
+                            <a href="../propietarios/listado_propietarios.php" class="acceso-rapido">
                                 <div class="icono-acceso"><i class="bi bi-people"></i></div>
                                 Propietarios
                             </a>
